@@ -1,0 +1,15 @@
+package advancedClassDesign;
+
+public class Enclosing {
+	
+	static class Nested {
+		private int price = 6;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Nested nested = new Nested();
+			System.out.println(nested.price);
+	}
+
+}
