@@ -1,4 +1,4 @@
-package level8;
+package Codewars.level8;
 
 public class Dalmatian {
 
