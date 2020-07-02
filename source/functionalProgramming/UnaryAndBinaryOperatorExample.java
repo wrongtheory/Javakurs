@@ -22,6 +22,9 @@ public class UnaryAndBinaryOperatorExample {
 		
 		System.out.println(b1.apply("baby ", "chick"));
 		System.out.println(b2.apply("baby", "chick"));
+		
+		if(true)
+			System.out.println();
 
 	}
 
@@ -35,3 +38,4 @@ public class UnaryAndBinaryOperatorExample {
 //Predicate
 //Consumer
 //BIPredicate
+

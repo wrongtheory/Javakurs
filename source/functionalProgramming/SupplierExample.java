@@ -25,6 +25,7 @@ public class SupplierExample {
 		Supplier<LocalDate> s1 = LocalDate::now;
 		Supplier<LocalDate> s2 = () -> LocalDate.now();
 		
+		
 		LocalDate d1 = s1.get();
 		LocalDate d2 = s2.get();
 		
