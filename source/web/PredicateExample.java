@@ -19,8 +19,8 @@ public class PredicateExample {
 		System.out.println(nonNull.negate());
 		System.out.println(isNull);
 		
-		Predicate<String> isEmpty = S
-		Predicate<String> isNonEmpty = isEmpty.negate();tring::isEmpty;
+		Predicate<String> isEmpty = String::isEmpty;
+		Predicate<String> isNonEmpty = isEmpty.negate();
 		
 		System.out.println(isEmpty.test(""));
 		System.out.println(isNonEmpty.test("1"));
