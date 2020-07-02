@@ -289,8 +289,28 @@ public class StreamExample3 {
 							System.out.printf("combiner: sum1=%s; sum2=%s\n",st1,st2);
 							return st1+st2;
 						});
+		System.out.println("============================================================");
+		
+		List<PersonExample> per = Arrays.asList(
+				new PersonExample("Max", 18),
+				new PersonExample("Peter", 23),
+				new PersonExample("Pamela", 23),
+				new PersonExample("David", 12));
 		
 				
+		per
+			.parallelStream()
+			.reduce(0, 
+					(sg,pg) -> {
+						System.out.format("accumulator: sum=%s; person=%s [%s]\n",
+								sg,pg,Thread.currentThread().getName());
+						return sg+=pg.age;
+					},
+					(sum1, sum2) -> {
+						System.out.format("combiner: sum1=%s sum2=%s [%s]\n",
+								sum1,sum2,Thread.currentThread().getName());
+						return sum1+sum2;
+					});
 
 	}
 	
