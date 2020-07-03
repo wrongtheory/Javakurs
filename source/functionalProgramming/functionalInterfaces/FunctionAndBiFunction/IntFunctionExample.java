@@ -1,4 +1,4 @@
-package functionalProgramming.functionalInterfaces;
+package functionalProgramming.functionalInterfaces.FunctionAndBiFunction;
 
 import java.util.function.IntFunction;
 
