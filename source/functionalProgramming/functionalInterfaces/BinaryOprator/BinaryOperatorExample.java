@@ -9,6 +9,7 @@ public class BinaryOperatorExample {
 		
 		BinaryOperator<String> bin = (a,b) -> a.concat(b);
 		System.out.println(bin.apply("Hello ", " World"));
+		
 
 	}
 
