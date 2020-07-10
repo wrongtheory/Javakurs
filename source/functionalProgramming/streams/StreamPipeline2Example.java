@@ -11,7 +11,7 @@ public class StreamPipeline2Example {
 		
 		Stream.generate(() ->  "asdf")
 		.filter(n -> n.length() == 4)
-		.limit(2)
+		.limit(4)
 		.sorted()
 		.forEach(System.out::println);
 
