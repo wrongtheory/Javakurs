@@ -33,7 +33,7 @@ public class JavaStreamExample {
         productsList.stream()  
                     .filter(p ->p.price> 20000)   // filtering price  
                     .limit(3)
-                    .map(pm ->pm.price)          // fetching price
+                    .map(a -> a.name + " " + a.price)       // fetching price
                     .forEach(System.out::println);  // iterating price  
         
         

@@ -12,7 +12,7 @@ public class C36 {
 
          Console console = System.console();
 
-         String s = console.readPassword();
+       //  String s = console.readPassword();
 
  
 

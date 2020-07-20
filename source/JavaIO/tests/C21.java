@@ -48,7 +48,7 @@ public class C21 {
 
       dos2.writeInt(n);
 
-      os = null;
+     // os = null;
 
  
 
