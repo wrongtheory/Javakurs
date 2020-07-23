@@ -27,7 +27,7 @@ public class Test1 {
 		Path path1 = Paths.get("C:/data/hz.txt");
 		Path path2 = Paths.get("C:\\data\\a");
 		System.out.println(path1.getNameCount());
-		System.out.println(path1.getParent().normalize().toAbsolutePath());
+		//System.out.println(path1.getParent().normalize().toAbsolutePath());
 		System.out.println(path1.getRoot());
 		//System.out.println(path1.getName(1));
 		System.out.println(path1.getFileSystem());
@@ -43,20 +43,20 @@ public class Test1 {
 		path4.forEach(i -> System.out.println(i));
 		
 		
-		System.out.println("subpath: " + path1.subpath(0, 1));
+		//System.out.println("subpath: " + path1.subpath(0, 1));
 		
 		System.out.println(path1.relativize(path2));
 		System.out.println(path2.relativize(path1));
 		
-		System.out.println(path1.resolve(path2));
-		System.out.println(path2.resolve(path1));
+		System.out.println("resolve1 " + path1.resolve(path2));
+		System.out.println("resolve2 " + path2.resolve(path1));
 		
 		Path relative = path1.relativize(path2);
 		System.out.println(path1.resolve(relative).normalize());
 		
 		System.out.println(Files.exists(path1));
 		
-		//Files.copy(Paths.get("C:/data"),Paths.get("C:/data1"));
+		//Files.copy(Paths.get("C:/data/hz.txt"),Paths.get("C:/data2/hz.txt"));
 		//Files.copy(Paths.get("C:/data/source.txt"),Paths.get("C:/data1/source2.txt"));
 		
 		//InputStream is = new FileInputStream("C:/data/source.txt");
@@ -71,11 +71,11 @@ public class Test1 {
 		//Files.deleteIfExists(Paths.get("C:/data/aa"));
 		
 		
-		BufferedReader reader = Files.newBufferedReader(path1, Charset.forName("US-ASCII"));
+		//BufferedReader reader = Files.newBufferedReader(path1, Charset.forName("US-ASCII"));
 		
-		String curlinr = null;
-		while((curlinr = reader.readLine()) != null )
-			System.out.println(curlinr);
+		//String curlinr = null;
+		//while((curlinr = reader.readLine()) != null )
+			//System.out.println(curlinr);
 
 	
 		final List<String> lines = Files.readAllLines(path1);
