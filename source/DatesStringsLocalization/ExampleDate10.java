@@ -16,6 +16,8 @@ public class ExampleDate10 {
 		LocalDate date = LocalDate.of(2015, 5, 25);
 		LocalTime time = LocalTime.of(11, 55, 00);
 		
+		
+		date.equals(date);
 		ZoneId zone = ZoneId.of("US/Eastern");
 		
 		ZonedDateTime zonedDateTime = ZonedDateTime.of(date, time, zone);
@@ -44,7 +46,7 @@ public class ExampleDate10 {
 		Instant nextHour = instant.plus(1, ChronoUnit.HOURS);
 		System.out.println(nextHour);
 		
-		Instant nextWeek = instant.plus(1, ChronoUnit.WEEKS);
+		//Instant nextWeek = instant.plus(1, ChronoUnit.WEEKS);
 
 	}
 

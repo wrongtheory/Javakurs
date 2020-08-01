@@ -9,7 +9,7 @@ public class Tax_en_US extends ListResourceBundle{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ResourceBundle rb = ResourceBundle.getBundle("DatesStringsLocalization.Tax", Locale.US);
+		ResourceBundle rb = ResourceBundle.getBundle("Tax", Locale.US);
 		System.out.println(rb.getObject("tax"));
 
 	}

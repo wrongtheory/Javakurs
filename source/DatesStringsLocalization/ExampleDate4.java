@@ -1,6 +1,7 @@
 package DatesStringsLocalization;
 
 import java.time.Duration;
+import java.time.Period;
 
 public class ExampleDate4 {
 
@@ -8,6 +9,8 @@ public class ExampleDate4 {
 		// TODO Auto-generated method stub
 
 		Duration daily = Duration.ofDays(1);
+		Period p = Period.ofDays(1);
+		System.out.println(p);
 		System.out.println(daily);
 		Duration hourly = Duration.ofHours(1);
 		System.out.println(hourly);

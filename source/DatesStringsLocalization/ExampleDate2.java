@@ -10,7 +10,7 @@ public class ExampleDate2 {
 		
 		LocalDate start = LocalDate.of(2015, Month.JANUARY, 1);
 		
-		LocalDate end = LocalDate.of(2015, Month.MARCH, 30);
+		LocalDate end = LocalDate.of(2015, Month.JUNE, 30);
 
 		performAnimalEnrichment(start, end);
 		

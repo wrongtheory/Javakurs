@@ -8,6 +8,8 @@ public class ExampleDate13 {
 		// TODO Auto-generated method stub
 		
 		Locale locale = Locale.getDefault();
+		Locale.setDefault(new Locale("",""));
+		
 		System.out.println(locale);
 		
 		System.out.println(Locale.GERMAN);

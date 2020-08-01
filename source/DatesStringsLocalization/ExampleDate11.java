@@ -1,5 +1,6 @@
 package DatesStringsLocalization;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Month;
@@ -15,7 +16,8 @@ public class ExampleDate11 {
 		LocalTime time = LocalTime.of(1, 30);
 		ZoneId zone = ZoneId.of("US/Eastern");
 		ZonedDateTime dateTime = ZonedDateTime.of(date, time, zone);
-		
+		Duration d = Duration.ofHours(3);
+		dateTime = dateTime.plus(d);
 		System.out.println(dateTime);
 		
 		dateTime = dateTime.plusHours(1);

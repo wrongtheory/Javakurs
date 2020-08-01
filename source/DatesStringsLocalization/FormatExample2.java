@@ -6,8 +6,12 @@ import java.time.LocalTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 
 import org.apache.derby.client.am.DateTime;
+
+import sun.rmi.transport.proxy.CGIHandler;
 
 public class FormatExample2 {
 
@@ -17,8 +21,7 @@ public class FormatExample2 {
 		LocalDate date = LocalDate.of(2020, Month.JANUARY, 20);
 		LocalTime time = LocalTime.of(11, 12, 34);
 		LocalDateTime dateTime = LocalDateTime.of(date, time);
-		
-		String pattern;
+
 		DateTimeFormatter shortF = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 		DateTimeFormatter mediumF = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
 		
@@ -27,7 +30,7 @@ public class FormatExample2 {
 		
 		DateTimeFormatter f = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
 		System.out.println(dateTime.format(f));
-
+//date.format(f);
 	}
 
 }
