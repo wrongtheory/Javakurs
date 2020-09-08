@@ -27,3 +27,13 @@ interface verifica {
 }
 
 
+class Prot1 {
+	protected static int i  = 1;
+}
+
+class Prot2 extends Prot1{
+	Prot2(){
+		System.out.println(Prot1.i);
+	}
+}
+

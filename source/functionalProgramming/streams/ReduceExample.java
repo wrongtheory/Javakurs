@@ -18,14 +18,14 @@ public class ReduceExample {
 		
 		Stream<String> stream = Stream.of("w","o","l","f");
 		String word = stream.reduce("", (s,c) -> s + c);
-		//System.out.println(word);
+		System.out.println(word);
 		
 		Stream<String> stream2 = Stream.of("w","o","l","f");
 		String word2 = stream2.reduce("", String::concat);
-		//System.out.println(word2);
+		System.out.println(word2);
 		
 		Stream<Integer> stream3 = Stream.of(1,2,3);
-		//System.out.println(stream3.reduce(1,(a,b) -> a*b));
+		System.out.println(stream3.reduce(1,(a,b) -> a*b));
 		//System.out.println(15*6);
 		
 		BinaryOperator<Integer> op = (a,b) -> a * b;

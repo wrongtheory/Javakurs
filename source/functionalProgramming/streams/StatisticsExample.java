@@ -7,8 +7,8 @@ import java.util.stream.IntStream;
 public class StatisticsExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+			System.out.println(max(IntStream.of(1,2,3)));
+			System.out.println(range(IntStream.of(1,2,3)));
 	}
 	
 	private static int max(IntStream ints) {

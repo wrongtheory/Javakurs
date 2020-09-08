@@ -17,11 +17,11 @@ public class ObjToLongConsumerExample {
 			list
 				.stream()
 				.filter(x -> x%2 != 0)
-				.map(x -> x+1)
+				.map(x -> x+elem)
 				.forEach(System.out::println);
 		};
 		
-		ll.accept(l, 5);
+		ll.accept(l,10);
 
 	}
 

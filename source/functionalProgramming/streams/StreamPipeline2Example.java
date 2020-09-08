@@ -9,10 +9,8 @@ public class StreamPipeline2Example {
 	public static void main(String[] args) {
 		
 		
-		Stream.generate(() ->  "asdf")
-		.filter(n -> n.length() == 4)
+		Stream.generate(() -> Stream.of("a","b","c","d").distinct().map(x -> x))
 		.limit(4)
-		.sorted()
 		.forEach(System.out::println);
 
 	}

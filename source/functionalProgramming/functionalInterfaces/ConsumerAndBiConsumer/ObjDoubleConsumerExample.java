@@ -16,11 +16,11 @@ public class ObjDoubleConsumerExample {
 		
 		List<Integer> arr = Arrays.asList(1,2,3,4);
 		
-		ObjDoubleConsumer<List<Integer>> list = (a,b) -> {
-			a.stream().forEach(c -> System.out.println(c * b));
+		ObjDoubleConsumer<List<Integer>> list = (elements,elem) -> {
+			elements.stream().forEach(c -> System.out.println(elem * c));
 		};
 		
-		list.accept(arr, 2);
+		list.accept(arr, 10);
 	}
 
 }

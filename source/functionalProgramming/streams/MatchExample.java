@@ -4,6 +4,7 @@ package functionalProgramming.streams;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class MatchExample {
@@ -25,9 +26,13 @@ public class MatchExample {
 		
 		System.out.println(infinite.anyMatch(pred));
 		
-		System.out.println(infinite.noneMatch(pred));
+		//System.out.println(infinite.noneMatch(pred));
 		
-		System.out.println(infinite.allMatch(pred));
+		//System.out.println(infinite.allMatch(pred));
+		
+		System.out.println(list.stream().sorted((a,b) -> b.compareTo(a)).collect(Collectors.toList()));
+		
+		
 
 	}
 

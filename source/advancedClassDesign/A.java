@@ -1,7 +1,22 @@
 package advancedClassDesign;
 
+
+abstract class Test{
+	public static void A() {}
+}
+
+interface I {
+	public static void A() {}
+}
+
+
+
+
+
 public class A {
 
+	
+	
 	private int x = 10;
 	
 	class B {
